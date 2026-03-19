@@ -53,3 +53,34 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script> const content = {
+				icon1: {
+					title: "Field Deployment",
+					text: "Designed for portable use in real-world environments."},
+				icon2: {
+					title: "Sample Types",
+					text: "Supports saliva and blood testing."  },
+				icon3: {
+					title: "Fast Results",
+					text: "Near-instant analysis for critical decisions."  },
+				icon4: {
+					title: "Data Insights",
+					text: "Detailed analytical output." },
+				icon5: {
+					title: "Medical Use",
+					text: "Supports clinical treatment decisions." },
+				icon6: {
+					title: "Detection",
+					text: "Accurate identification of substances." }};
+				
+				Object.keys(content).forEach(id => {
+					document.getElementById(id).addEventListener("click", () => {
+						document.getElementById("title").innerText = content[id].title;
+						document.getElementById("description").innerText = content[id].text;
+					});
+				});
+			</script>
+									
+	</body>
+</html>
