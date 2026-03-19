@@ -12,11 +12,42 @@
 			<section id="header">
 				<div class="inner">
 					<span class="icon solid major fa-cloud"></span>
-					<h1> Client Testimonials </strong>.</h1>
+					<h1> Client Testimonials </strong></h1>
 					<ul class="actions special">
 						<li><a href="index.html" class="button"> Back </a></li>
 					</ul>
 				</div>
+
+		<!-- Columns --> 
+				<section id="three-columns" class="main style2">
+					<div class="container">
+						<div class="row gtr-150">
+							<div class="col-4 col-12-medium"> text 1 </div>
+							<div class="col-4 col-12-medium"> text 2 </div>
+							<div class="col-4 col-12-medium"> text 3 </div>
+						</div>
+					</div>
+				</section>
+
+				<style>
+					#three-columns .column {
+						padding: 15px;
+					}
+				/* Add vertical line to all columns except last */
+					#three-columns .column:not(:last-child) {
+						border-right: 2px solid #999; /* gray vertical line */
+					}
+					/* Optional: responsive stacking adjustment */
+					@media (max-width: 768px) {
+						#three-columns .column:not(:last-child) {
+							border-right: none; /* remove line on small screens */
+							border-bottom: 2px solid #999; /* optional horizontal line */
+							margin-bottom: 15px;
+							padding-bottom: 15px;
+						}
+					}
+				</style>
+				
 <!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
