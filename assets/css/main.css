@@ -2825,9 +2825,10 @@ input, select, textarea {
 		.main.style2 {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.75);
-			background-attachment: fixed,							fixed;
-			background-image: url("assets/css/vecteezy_molecules-or-dna-medical-structure-background-vector-design_9730794.jpg");
-			background-size: auto,							cover;
+			background-attachment: fixed;
+			background-image: url("vecteezy_molecules-or-dna-medical-structure-background-vector-design_9730794.jpg");
+			background-size:cover;
+			background-position: center; 
 		}
 
 			.main.style2 a {
