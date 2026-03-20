@@ -19,50 +19,30 @@
 				</div>
 
 		<!-- Columns --> 
-			 <div class="text-region">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel orci nec 
-      lorem gravida aliquam. This text box stretches the height of the page.
-    </p>
-    <p>
-      Add as many paragraphs as you like. The container will grow with content, and 
-      you can scroll if it exceeds the viewport.
-    </p>
-  </div>
-</section>
+			 <body>
+  <section class="three-columns">
+    <div class="column">
+      <h2>Column 1</h2>
+      <p>
+        This is the first column. You can add any text, images, or content here.
+      </p>
+    </div>
 
-<style>
-/* Make the section take full viewport height */
-#fullpage-section {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* full viewport height */
-  background-color: #f5f5f5;
-  padding: 20px;
-}
+    <div class="column">
+      <h2>Column 2</h2>
+      <p>
+        This is the second column. It sits between the other two with borders on both sides.
+      </p>
+    </div>
 
-/* Header region at the top */
-.header-region {
-  background-color: #007acc;
-  color: white;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-/* Text content region takes remaining space */
-.text-region {
-  flex: 1; /* grows to fill remaining vertical space */
-  margin-top: 20px;
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 8px;
-  overflow-y: auto; /* scroll if content is too tall */
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  font-size: 16px;
-  line-height: 1.6;
-}
-</style>
+    <div class="column">
+      <h2>Column 3</h2>
+      <p>
+        This is the third column. Customize this however you want.
+      </p>
+    </div>
+  </section>
+</body>
 				
 <!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
