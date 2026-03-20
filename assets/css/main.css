@@ -3509,25 +3509,22 @@ input, select, textarea {
 			}
 
 	}
-	/* --- Remove or leave the old .three-columns styles only if you still use it --- */
-
-/* Grid container for 6 cards */
+	/* Grid container */
 .testimonials-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
-  gap: 20px;                 /* space between cards */
-  padding: 20px;             /* space from container border */
+  gap: 20px;           /* spacing between cards */
+  padding: 20px;       /* spacing from container edges */
   margin-top: 40px;
-  background: transparent;
-  box-sizing: border-box;    /* ensures padding doesn't break layout */
+  box-sizing: border-box;
 }
 
-/* Individual testimonial cards */
+/* Individual cards */
 .testimonial-card {
-  background-color: #ffffff; /* card color */
+  background-color: transparent; /* no white background */
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* subtle shadow for card shape */
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -3553,7 +3550,7 @@ input, select, textarea {
   color: #555;
 }
 
-/* Responsive adjustments */
+/* Responsive */
 @media (max-width: 992px) {
   .testimonials-grid {
     grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
