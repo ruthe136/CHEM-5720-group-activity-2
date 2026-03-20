@@ -3509,47 +3509,6 @@ input, select, textarea {
 			}
 
 	}
-	
-/* Container for cards */
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columns */
-  gap: 30px;               /* spacing between cards */
-  padding: 20px;           /* space around container edges */
-  margin-top: 40px;
-  background: transparent; /* no background behind the cards */
-  box-sizing: border-box;
-}
 
-/* Individual cards */
-.card {
-  background-color: transparent;  /* fully transparent */
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05); /* subtle shadow */
-  text-align: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover effect */
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(0,0,0,0.1);
-}
-
-/* Number style */
-.card p {
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-/* Author style */
-.card h4 {
-  font-weight: bold;
-  margin: 0;
-  color: #FF8DA1;
-}
 
 
