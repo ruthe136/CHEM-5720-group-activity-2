@@ -3480,7 +3480,19 @@ input, select, textarea {
 						}
 
 	}
-
+				.three-columns {
+				  display: grid !important;
+				  grid-template-columns: 1fr 1fr 1fr;
+				  background-color: #e0e0e0;
+				}
+				
+				.three-columns .column {
+				  padding: 20px;
+				}
+				
+				.three-columns .column:not(:last-child) {
+				  border-right: 2px solid #999;
+				}
 /* XXSmall */
 
 	@media screen and (max-width: 320px) {
@@ -3490,21 +3502,7 @@ input, select, textarea {
 			html, body {
 				min-width: 320px;
 			}
-			.three-columns {
-				  display: flex;
-				  flex-direction: row;
-				  background-color: #e0e0e0;
-				  padding: 20px;
-				}
-				
-				.column {
-				  flex: 1;
-				  padding: 20px;
-				}
-				
-				.column:not(:last-child) {
-				  border-right: 2px solid #999;
-}
+		
 		/* Main */
 
 			.main {
