@@ -3341,7 +3341,31 @@ input, select, textarea {
 		/* Two */
 
 			#two {
-				text-align: center;
+  background-image: url('vecteezy_molecules-or-dna-medical-structure-background-vector-design_9730794.jpg'); /* replace with your image path */
+  background-size: cover;       /* make it cover the entire section */
+  background-position: center;  /* center the image */
+  background-repeat: no-repeat; /* prevent tiling */
+  position: relative;
+  padding: 80px 0;             /* space inside section */
+  color: #fff;                  /* optional: makes text white for contrast */
+}
+
+/* Optional: overlay for better text readability */
+#two::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4); /* dark semi-transparent overlay */
+  z-index: 0;
+}
+
+#two .container {
+  position: relative;
+  z-index: 1; /* ensures content appears above overlay */
+}
 			}
 
 	}
