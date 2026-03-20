@@ -3340,34 +3340,39 @@ input, select, textarea {
 
 		/* Two */
 
-			/* Target the section with high specificity */
-section#two.main.style2 {
-  background: url('vecteezy_molecules-or-dna-medical-structure-background-vector-design_9730794.jpg') no-repeat center center !important;
-  background-size: cover !important;   /* ensure it covers the section */
-  position: relative !important;
-  overflow: hidden;
-  padding: 80px 0;
-  color: #fff !important;             /* text color */
-}
-
-/* Overlay to make text readable */
-section#two.main.style2::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0,0,0,0.35); /* adjust darkness */
-  z-index: 0;
-}
-
-/* Make content appear above overlay */
-section#two.main.style2 .container {
-  position: relative;
-  z-index: 1;
-}
-
+			/* Force section to show background and full height */
+			#two {
+			  position: relative;                 /* needed for overlay */
+			  min-height: 500px;                  /* ensures section has height */
+			  background: url('vecteezy_molecules-or-dna-medical-structure-background-vector-design_9730794.jpg') no-repeat center center;
+			  background-size: cover;             /* fill the section */
+			  padding: 80px 0;
+			  color: #fff;
+			  overflow: hidden;                   /* contains overlay */
+			}
+			
+			/* Overlay to make text readable */
+			#two::before {
+			  content: "";
+			  position: absolute;
+			  top: 0;
+			  left: 0;
+			  width: 100%;
+			  height: 100%;
+			  background-color: rgba(0,0,0,0.35); /* adjust darkness */
+			  z-index: 0;
+			}
+			
+			/* Ensure container content is above overlay */
+			#two .container {
+			  position: relative;
+			  z-index: 1;
+			}
+			
+			/* Remove any Photon style2 background conflicts */
+			#two.style2 {
+			  background-color: transparent !important;
+			}
 /* Small */
 
 	@media screen and (max-width: 736px) {
