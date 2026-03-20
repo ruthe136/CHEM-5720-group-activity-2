@@ -3480,19 +3480,6 @@ input, select, textarea {
 						}
 
 	}
-				.three-columns {
-				  display: grid !important;
-				  grid-template-columns: 1fr 1fr 1fr;
-				  background-color: #e0e0e0;
-				}
-				
-				.three-columns .column {
-				  padding: 20px;
-				}
-				
-				.three-columns .column:not(:last-child) {
-				  border-right: 2px solid #999;
-				}
 /* XXSmall */
 
 	@media screen and (max-width: 320px) {
@@ -3521,4 +3508,22 @@ input, select, textarea {
 				padding: 2em 1em 2em 1em ;
 			}
 
+	}
+	/* Override Photon layout */
+	.three-columns {
+	  display: flex;
+	  flex-direction: row;
+	  gap: 0;
+	}
+	
+	/* Columns */
+	.three-columns .column {
+	  flex: 1;
+	  padding: 20px;
+	  background: #e0e0e0;
+	}
+	
+	/* Borders between */
+	.three-columns .column:not(:last-child) {
+	  border-right: 2px solid #999;
 	}
