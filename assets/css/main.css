@@ -3532,3 +3532,35 @@ input, select, textarea {
 	.three-columns .column:not(:last-child) {
 	  border-right: 2px solid #999;
 	}*/
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.testimonial-card {
+  background-color: #e0e0e0;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.15);
+}
+
+.testimonial-card p {
+  font-style: italic;
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 2em; /* makes the numbers more prominent */
+}
+
+.testimonial-card h4 {
+  text-align: center;
+  font-weight: bold;
+  margin: 0;
+}
