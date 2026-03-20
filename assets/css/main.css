@@ -3339,39 +3339,12 @@ input, select, textarea {
 			}
 
 		/* Two */
-
-			/* Force section to show background and full height */
-			/* Target the section and remove Photon gradient */
-			#two.style2 {
-			  background: none !important;           /* removes default gradient completely */
-			  background-image: url('vecteezy_molecules-or-dna-medical-structure-background-vector-design_9730794.jpg') !important;
-			  background-size: cover !important;
-			  background-position: center center !important;
-			  background-repeat: no-repeat !important;
-			  position: relative;
-			  min-height: 500px;                     /* ensures section has height */
-			  padding: 80px 0;
-			  color: #fff !important;                /* text color for readability */
-			  overflow: hidden;                      /* contains overlay */
-			}
+			#two{
+				background-image: url("../vecteezy_molecules-or-dna-medical-structure-background-vector-design_9730794.jpg");
+				background-size: cover; 
+				background-position: center;
+				background-repeat:no-repeat; 
 			
-			/* Overlay to improve text readability */
-			#two.style2::before {
-			  content: "";
-			  position: absolute;
-			  top: 0;
-			  left: 0;
-			  width: 100%;
-			  height: 100%;
-			  background-color: rgba(0,0,0,0.35);   /* adjust darkness as needed */
-			  z-index: 0;
-			}
-			
-			/* Make container content appear above overlay */
-			#two.style2 .container {
-			  position: relative;
-			  z-index: 1;
-}
 /* Small */
 
 	@media screen and (max-width: 736px) {
