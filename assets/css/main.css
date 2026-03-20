@@ -3514,13 +3514,15 @@ input, select, textarea {
 	  display: flex;
 	  flex-direction: row;
 	  gap: 0;
+		margintop:40px;
+	
 	}
 	
 	/* Columns */
 	.three-columns .column {
 	  flex: 1;
 	  padding: 20px;
-	  background: #e0e0e0;
+	  background: #3f403f;
 	}
 	
 	/* Borders between */
