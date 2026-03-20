@@ -3514,18 +3514,21 @@ input, select, textarea {
 	  display: flex;
 	  flex-direction: row;
 	  gap: 0;
-		margintop:40px;
+		margintop: 40px;
+		gap: 10px;
 	
 	}
 	
 	/* Columns */
 	.three-columns .column {
 	  flex: 1;
-	  padding: 20px;
-	  background: #3f403f;
+	  padding: 40px;
+	  background: #ffffff;
+		border-radius: 8px;
+		minheight: 300px;
 	}
 	
-	/* Borders between */
+	/* Borders between 
 	.three-columns .column:not(:last-child) {
 	  border-right: 2px solid #999;
-	}
+	}*/
