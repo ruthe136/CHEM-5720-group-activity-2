@@ -3490,7 +3490,21 @@ input, select, textarea {
 			html, body {
 				min-width: 320px;
 			}
-
+			.three-columns {
+				  display: flex;
+				  flex-direction: row;
+				  background-color: #e0e0e0;
+				  padding: 20px;
+				}
+				
+				.column {
+				  flex: 1;
+				  padding: 20px;
+				}
+				
+				.column:not(:last-child) {
+				  border-right: 2px solid #999;
+}
 		/* Main */
 
 			.main {
