@@ -1,99 +1,61 @@
-<html>
-	<head>
-		<title>Hi I am Safeline Diagnostics </title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<script>
+const content = {
+	icon1: {
+		title: "RapidSpec is Portable",
+		text: `
+Commercially available Liquid Chromatography - Mass Spectrometry systems used in labs typically require multiple modules, tubes, and containers. RapidSpec combines all modules into one simple, sleek design.
 
-		<!-- Header -->
-			<section id="header">
-				<div class="inner">
-					<span class="icon solid major fa-cloud"></span>
-					<h1> <strong> Competitor Products </strong>.</h1>
-					<p>Our purpose is to provide accessible analytical testing methods that can quickly and accurately quantify opioids in the field, improving community response to opioid overdoses. </p>
-					<ul class="actions special">
-						<li><a href="index.html" >Back</a></li>
-					</ul>
-				</div>
-			</section>
-			<!-- Two -->
-			<section id="two" class="main style2">
-				<div class="container">
-					<div class="row gtr-150">
-						<div class="col-6 col-12-medium">
-							<ul class="major-icons">
-								<li><span id="icon1" class="icon solid style1 major fa-briefcase"></span></li>
-								<li><span id="icon2" class="icon solid style3 major fa-tint"></span></li> 
-								<li><span id="icon3" class="icon solid style2 major fa-clock"></span></li>
-								<li><span id="icon4" class="icon solid style6 major fa-chart-line"></span></li>
-								<li><span id="icon5" class="icon solid style4 major fa-hospital"></span></li>
-								<li><span id="icon6" class="icon solid style5 major fa-search"></span></li>
-							</ul>
-						</div>
-						<div class="col-6 col-12-medium">
-							<header class="major">
-								<h2 id="title">Competitor Products</h2>
-							</header>
-							<p id="description">
-								Click an icon to learn how RapidSpec compares to other products.
-							</p>	
-						</div>
-		
-		
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-			
-			<script> const content = {
-				icon1: {
-					title: "RapidSpec is Portable",
-					text: `
-						Commercially available Liquid Chromatography - Mass Spectrometry used in laboratory settings commonly use multiple modules, tubes, containers are needed to run experiments. RapidSpec combines all the models into one simple, sleek design.
-
-						While typically lab instruments are stationary our product can be transported anywhere. And with the rechargeable battery and solar option our product does not require an outlet or wall power source. Other competitor products such as the MX908 Handheld Mass Spectrometer for Chemical Identification requires multiple hands to operate and has to be constantly held during usage. RapidSpec can be set apart from the action to allow for safe usage and user accessibility.
-},
-				icon2: {
-					title: "Sample Preparation is Minimal",
-					text: "RapidSpec allows for saliva sample collection and testing on site with minimal preparation time. Other competitor products such as the MasSpec Pen System use a handheld pen device to collect skin samples however the pen is connected to the instrument. 
-						
-						Our product allows for sampling to be collected from any location and brought to the machine which allows for increased range of use. RapidSpec allows for samples to be run multiple times with changing any cartridges or parameters of the instrument between trials. Our library of information compares the results of the mass spectra to determine the composition of opioids found in a particular sample. 
-	
-						Other competitor products such as the SoToxa ORAL FLUID MOBILE TEST SYSTEM requires individual non resumable cartridges for each sample run which can be cost deficient and time consuming. Our product provides a quicker, reusable, reliable tool to qualify samples."
- },
-				icon3: {
-					title: "RapidSpec Pricing and Affordability",
-					text: "Commercially available liquid chromatography - mass spectrometry instruments with a triple quadrupole are available from approximately $250,000 to $500,000. However, our company makes our product more affordable and comparable with portable mass spectrometry products so both large and small companies can afford our project and support the opioid crisis in their area. The starting quote for Rapid Spec is approximately $100,000 however additional terms and conditions may apply. Contact us for more information." 
+While most lab instruments are stationary, our product is fully portable. With a rechargeable battery and solar option, it does not require an outlet. Other competitor products, such as the MX908 handheld mass spectrometer, require constant handling. RapidSpec can be set aside for safer and more accessible use.
+`
 	},
-				icon4: {
-					title: "RapidSpec Design Flow",
-					text: "The RapidSpec instrument combines a Liquid Chromatography instrument with a Mass Spectrometer in a compact aluminum case with handles for easy transport. On the outside top of the case is a solar panel energy source connected to an inside battery and a screen that displays results. The top of the case contains the mobile phase solvents, battery pack, related electronics and injector pump into the chromatography column. The column goes  into the bottom portion of the case, wraps around, and feeds into the  electrospray ionization source. The ionized samples then pass through two quadrapoles, a reflective tunnel, through a third quadrupole and into the electron multiplier detector. The detector and analysis components collect mass spectra and use the library of data related to opioids to classify a sample. The results are stored and projected to the exterior screen. See the flowchart below." },
-				icon5: {
-					title: "Current RapidSpec Usage",
-					text: "As of 2026, Safeline Diagnostics has sold over 100,000 units of RapidSpec to hosipitals, law enforcement, paramedic companies, universities, research institutiions, and more!" },
-				icon6: {
-					title: "Future Goals of RapidSpec Technology ",
-					text: "The scientists at Safeline Diagnositics are currently developing technology and software to expand on the capabilities of RapidSpec. Currently our product is solely designed for saliva samples however insertable adaptations compatible for blood and skin samples are in development. 
+	icon2: {
+		title: "Sample Preparation is Minimal",
+		text: `
+RapidSpec allows for saliva sample collection and testing on-site with minimal preparation time. Competitor products like the MasSpec Pen require the sampling device to remain attached to the instrument.
 
-					Furthermore, opioids are not the only class of dangerous or toxic drugs that need to be classified for proper care and treatment. Safeline Diagnositics is working on constructing libraries and software for testing and determined other drug classes such as Stimulants, Depressants, and Hallucinogens." },
+Our product allows samples to be collected anywhere and brought back to the device, increasing flexibility. Samples can also be run multiple times without changing cartridges or settings.
 
-	
-				 }};
-				
-				Object.keys(content).forEach(id => {
-					document.getElementById(id).addEventListener("click", () => {
-						document.getElementById("title").innerText = content[id].title;
-						document.getElementById("description").innerText = content[id].text;
-					});
-				});
-			</script>
-					</div>
-				</div>						
-	</body>
-</html>
+Other systems, such as the SoToxa Oral Fluid Mobile Test System, require single-use cartridges, making them more expensive and time-consuming. RapidSpec provides a reusable, efficient alternative.
+`
+	},
+	icon3: {
+		title: "RapidSpec Pricing and Affordability",
+		text: `
+Traditional liquid chromatography–mass spectrometry systems can cost between $250,000 and $500,000.
+
+RapidSpec is designed to be more affordable and comparable to portable systems, making it accessible to both large and small organizations. The starting price is approximately $100,000, though additional terms may apply.
+`
+	},
+	icon4: {
+		title: "RapidSpec Design Flow",
+		text: `
+RapidSpec combines liquid chromatography and mass spectrometry into a compact aluminum case with handles for easy transport.
+
+The top section contains solvents, a battery pack, electronics, and a pump. The bottom section houses the chromatography column, electrospray ionization source, quadrupoles, and detector.
+
+The system collects mass spectra and compares them to a database to classify opioid samples. Results are displayed on the external screen.
+`
+	},
+	icon5: {
+		title: "Current RapidSpec Usage",
+		text: `
+As of 2026, Safeline Diagnostics has sold over 100,000 RapidSpec units to hospitals, law enforcement, paramedics, universities, and research institutions.
+`
+	},
+	icon6: {
+		title: "Future Goals of RapidSpec Technology",
+		text: `
+Safeline Diagnostics is expanding RapidSpec capabilities beyond saliva testing. Adaptations for blood and skin samples are currently in development.
+
+Future goals also include expanding detection capabilities beyond opioids to include stimulants, depressants, and hallucinogens.
+`
+	}
+};
+
+Object.keys(content).forEach(id => {
+	document.getElementById(id).addEventListener("click", () => {
+		document.getElementById("title").innerText = content[id].title;
+		document.getElementById("description").innerHTML = content[id].text;
+	});
+});
+</script>
