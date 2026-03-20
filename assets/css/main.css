@@ -3509,50 +3509,30 @@ input, select, textarea {
 			}
 
 	}
-	/* Override Photon layout */
-	.three-columns {
-	  display: flex;
-	  flex-direction: row;
-	  gap: 0;
-		margintop: 40px;
-		gap: 10px;
-	
-	}
-	
-	/* Columns */
-	.three-columns .column {
-	  flex: 1;
-	  padding: 40px;
-	  background: #ffffff;
-		border-radius: 8px;
-		minheight: 300px;
-	}
-	
-	/* Borders between 
-	.three-columns .column:not(:last-child) {
-	  border-right: 2px solid #999;
-	}*/
-/* Grid container */
+	/* --- Remove or leave the old .three-columns styles only if you still use it --- */
+
+/* Grid container for 6 cards */
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;               /* space between cards */
+  grid-template-columns: repeat(3, 1fr); /* exactly 3 columns */
+  gap: 20px;                 /* space between cards */
+  padding: 20px;             /* space from container border */
   margin-top: 40px;
-  padding: 10px 0;
-  background: transparent;  /* so the cards pop out */
+  background: transparent;
+  box-sizing: border-box;    /* ensures padding doesn't break layout */
 }
 
-/* Individual cards */
+/* Individual testimonial cards */
 .testimonial-card {
-  background-color: #ffffff;   /* card color */
+  background-color: #ffffff; /* card color */
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1); /* soft shadow */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect for cards */
+/* Hover effect */
 .testimonial-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 12px 20px rgba(0,0,0,0.15);
@@ -3571,4 +3551,17 @@ input, select, textarea {
   font-weight: bold;
   margin: 0;
   color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+  }
+}
+
+@media (max-width: 600px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr; /* 1 column on mobile */
+  }
 }
